@@ -26,7 +26,17 @@ In mongo db we all do in javascript and json fornmat
 <img width="528" alt="image" src="https://github.com/Gunasekaran-143/MongoDB/assets/134137559/37bfe81a-989b-4d92-9e31-b4d753001fac">
 
 # skip commmand will skip
-
+mydb> db.users.find().skip(1).limit(2)
+[
+  {
+    _id: ObjectId("6509c835fb853588665cf293"),
+    name: 'Uth',
+    age: 22,
+    address: { street: 'sunami', pincode: 876574 },
+    hobbies: [ 'coding', 'cooking' ]
+  },
+  { _id: ObjectId("6509c954fb853588665cf294"), name: 'bharath' }
+]
 
 # find command what we given we have to search exactly
 <img width="540" alt="image" src="https://github.com/Gunasekaran-143/MongoDB/assets/134137559/ec3f23e3-1783-4494-9afb-9f569e7c74a5">
@@ -45,6 +55,7 @@ mydb> db.users.find( { age: {$ls: 19 }} ) #less than equal
 
 mydb> db.users.find( { name: { $eq: "Gunasekaran"}}) equal to 
 mydb> db.users.find( { name: { $ne: "Gunasekaran"}}) ne: not equalto
+<img width="495" alt="image" src="https://github.com/Gunasekaran-143/MongoDB/assets/134137559/716f245c-ca3e-4138-a037-06b261e78659">
 
 mydb> db.users.find( { name: { $nin: ["Gunasekaran","suresh"]}}) NOTin db
 mydb> db.users.find( { name: { $in: ["Gunasekaran","suresh"]}}) NOTin db
