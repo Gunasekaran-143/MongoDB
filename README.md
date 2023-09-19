@@ -33,9 +33,26 @@ In mongo db we all do in javascript and json fornmat
 if you see in this example first i search small letter gunasekaran but can't find 
 but <br>
 If I search "Gunasekaran" it will show the match of data <br>
-
 So it is case sensitive
 
+#  more commands: 
+mydb> db.users.find( { age: {$gt: 29 }} ) # greater Than
+mydb> db.users.find( { age: {$gte: 19 }} ) #greater than equal
+
+mydb> db.users.find( { age: {$lt: 19 }} )#less than
+
+mydb> db.users.find( { age: {$ls: 19 }} ) #less than equal
+
+mydb> db.users.find( { name: { $eq: "Gunasekaran"}}) equal to 
+mydb> db.users.find( { name: { $ne: "Gunasekaran"}}) ne: not equalto
+
+mydb> db.users.find( { name: { $nin: ["Gunasekaran","suresh"]}}) NOTin db
+mydb> db.users.find( { name: { $in: ["Gunasekaran","suresh"]}}) NOTin db
+
+<img width="960" alt="image" src="https://github.com/Gunasekaran-143/MongoDB/assets/134137559/60baf020-3780-4b5d-9f8e-12e25c4172fb">
+
+
 # if you dont need object give _id:0 
-![Uploading image.png…]()
+<img width="960" alt="image" src="https://github.com/Gunasekaran-143/MongoDB/assets/134137559/45a21580-0429-4a9d-b5d1-fa1ba3e3e457">
+
 
